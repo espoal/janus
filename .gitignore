@@ -1,0 +1,15 @@
+# Yarn Non-Zero Installs
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# Node (fallback from PnP)
+node_modules
+
+# Editors
+.idea
+.vscode
