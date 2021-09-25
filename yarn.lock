@@ -3,9 +3,31 @@
 
 __metadata:
   version: 4
+  cacheKey: 8
+
+"build@workspace:deps/build":
+  version: 0.0.0-use.local
+  resolution: "build@workspace:deps/build"
+  languageName: unknown
+  linkType: soft
 
 "root-workspace-0b6124@workspace:.":
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   languageName: unknown
   linkType: soft
+
+"server@workspace:pkgs/server":
+  version: 0.0.0-use.local
+  resolution: "server@workspace:pkgs/server"
+  dependencies:
+    urlpattern-polyfill: ^1.0.0-rc1
+  languageName: unknown
+  linkType: soft
+
+"urlpattern-polyfill@npm:^1.0.0-rc1":
+  version: 1.0.0-rc1
+  resolution: "urlpattern-polyfill@npm:1.0.0-rc1"
+  checksum: 7d29a538637379919ecdfa80f27bd2d07827f4ef3f13f6eb77a370cf02a0e109502f966b71cef1d1c815f9d09bbc76d4100945a6a1ff4dfe980fded9ee6a136f
+  languageName: node
+  linkType: hard
